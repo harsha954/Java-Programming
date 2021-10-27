@@ -47,7 +47,7 @@ public class Main {
     sc.close();
 }
 }
-// 3.Write a Java program to remove a specific element from an array.
+// 4. Write a Java program to find the common elements between two arrays (string values)
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -92,6 +92,18 @@ class Main{
         System.out.println(s.equals(s1));
     }
 }      
+	    
+// 7. Reverse the string 
+	    public class Main {
+	public static void main(String[] args)
+	{
+		String str = "Hello World...";
+		StringBuffer s = new StringBuffer(str);
+		s.reverse();
+		System.out.println(s);
+	}
+}
+
 //8. Print the pattern 1
 // **
 // **
@@ -127,6 +139,7 @@ import java.util.*
         sc.close();
     }
 }
+	    
 // 11.print the pattern 4
 // 1234
 // 123
@@ -257,6 +270,97 @@ public class Main
         sc.close();
 	}
 }
+
+
+// 14. Print the pattern 7 
+// * * * $
+// * * $ *
+// * $ * *
+// $ * * *
+
+public class Main
+{
+	public static void main(String args[])
+	{
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=n-1;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(j==m){
+                    System.out.print("$");
+                }
+                else
+                System.out.print("* ");
+            }
+            m-=1;
+            System.out.print("\n");
+            
+        }
+	}
+}
+// 15. Sort elements in array :
+
+public class Main {
+    public static void main(String args[]) {
+        int[] arr = { 1, 23, 6, 25, 85 };
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                int tmp = 0;
+                if (arr[i] > arr[j]) {
+                    tmp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = tmp;
+                }
+            }
+            System.out.println(arr[i]);
+        }
+    }
+}
+
+// 16. Write a Java program to check if an array of integers contains two specified elements 6 and 25
+
+
+public class Main
+{
+	public static void main(String args[])
+	{
+        int[] array = {1,23,6,25,85};
+        int count=0;
+        for(int i:array){
+            if(i==6){
+                count+=1;
+            }
+            if(i==25){
+                count+=1;
+            }
+        }
+        if(count==2){
+            System.out.println("array contains 6 and 25");
+            
+        }
+        else
+        System.out.println("array not contains 6 and 25");
+	}
+}
+
+// 17. Write a program to find the product of all elements of an array.
+
+public class Main
+{
+	public static void main(String args[])
+	{
+        int[] array ={1,3,4,8,6};
+        int total=1;
+        for(int i:array){
+            total*=i;
+        }
+        System.out.println(total);
+	}
+}
+
+
+
 // 18. Use 5 to 6 string inbuilt functions and write a program each 
 // Eg : write separate program for toUpperCase()
 public class Main
