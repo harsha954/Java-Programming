@@ -257,5 +257,33 @@ public class Main
         sc.close();
 	}
 }
+// 18. Use 5 to 6 string inbuilt functions and write a program each 
+// Eg : write separate program for toUpperCase()
+public class Main
+{
+	public static void main(String args[])
+	{
+		String s1="Hello";
+        String s2="World";
+        System.out.println(s1.charAt(2));
+        System.out.println(s1.compareTo(s2));
+        System.out.println(s1.concat(s2));
+        System.out.println(s1.contains(s2));
+        System.out.println(s1.endsWith(s2));
+        System.out.println(s1.startsWith(s2));
+        System.out.println(s1.equals(s2));
+        System.out.println(s1.equalsIgnoreCase(s2));
+        System.out.println(s1.compareToIgnoreCase(s2));
+        System.out.println(s1.hashCode());
+        System.out.println(s1.indexOf("wo"));
+        System.out.println(s1.lastIndexOf("wo"));
+        System.out.println(s1.isEmpty());
+        System.out.println(s1.length());
+        System.out.println(s1.replace("wo", "kk"));
+        System.out.println(s1.toLowerCase());
+        System.out.println(s1.toUpperCase());
+        System.out.println(s1.trim());
+	}
+}
 
       
